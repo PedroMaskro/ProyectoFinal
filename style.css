@@ -1,0 +1,310 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.Cabeza {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 55;
+    background-color: #141414;
+    color: beige;
+    text-align: center;
+}
+
+.LogoMan {
+    width: 95%;
+    height: 80%;
+}
+
+/* Por revisar 1 */
+
+.boton {
+    position: absolute;
+    color: white;           
+    font-size: 17px;        
+    /* top: 220px;              */
+    top: 25%;
+    /* left: 50px;              */
+    left: 3%;
+    border: 2px solid #c82f2f;
+    box-shadow: inset 0 0 0 0 #ffff;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    box-shadow: inset 400px 0 0 0 #ffff;
+    transform: scale(1.1);
+}
+
+
+.txtboton {
+    margin: 8px 45px;
+    font-size: smaller;
+    color: #c82f2f;
+    font-weight:700;
+}
+
+.fulltextyamaha {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    position: absolute;
+    color: white;           
+    font-size: 40px;        
+    top: 7%;
+    left: 1%;
+    z-index: 1;             /* Asegura que el texto esté por encima de la imagen */
+}
+
+.fulltextducati {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    position: absolute;
+    color: white;           
+    font-size: 40px;        
+    top: 7%;
+    left: 1%;
+    z-index: 1;  
+}
+
+
+.textoimg {
+    margin: 8px 30px
+}
+
+.text2img {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 33px;
+}
+
+.entrefotos {
+    display: flex;
+    background-color: #141414;
+    /* margin: -10px auto; */
+    max-height: 70px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.yamaha, .Ducati {
+    position: relative;
+    width: 100vw;  
+    height: 95vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.R1img, .V4img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.ESPinfo-Yamaha {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 18px;
+}
+
+.ESPinfo1-Yamaha {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+.ESPinfo2-Yamaha {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+.ESPinfo3-Yamaha {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+.ESPinfo-Ducati {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 18px;
+}
+
+.ESPinfo1-Ducati {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+.ESPinfo2-Ducati {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+.ESPinfo3-Ducati {
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura de carbono */
+    background-color: #111; /* Color de fondo oscuro */
+    color: white;
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 18px;
+    
+}
+
+/* Galeria de fotos */
+
+.allphoto {
+    background-color: #1a1a1a;
+}
+
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.gallery img {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery img.active {
+    display: block;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.MiniImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+.MiniImg img {
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.MiniImg img:hover {
+    opacity: 1;
+}
+
+/* Galeria de fotos */
+
+/* Contacto */ 
+.contacto {
+    background-color: #1a1a1a;
+}
+
+.contText {
+    margin-bottom: 5%;
+}
+
+.textoC {
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.hrcontact {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.mailC {
+    margin-left: 20%
+}
+/* Contacto */
+
+
+/* Footer */
+.footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #5c5c5c;
+}
+
+
+hr {
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 1px solid white; /* Línea blanca */
+    width: 60%; /* Ancho del 80% del contenedor */
+    margin: 10px auto; /* Espaciado arriba/abajo y centrado */
+    
+}
+
+.DesignM {
+    margin-left: 20%;
+}
+
+.fraseF {
+    margin-left: 20%;
+}
+
+.socials {
+    margin-left: 20%;
+
+}
+/* Footer */
