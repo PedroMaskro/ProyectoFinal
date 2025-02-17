@@ -1,6 +1,6 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('.gallery img');
-const totalImages = images.length;
+let currentIndex = 0;    /* variable que almacena el índice de la imagen actualmente visible */
+const images = document.querySelectorAll('.gallery img');    /* lista de todos los elementos img dentro de la clase .gallery. */
+const totalImages = images.length;   /* Numero total de imagenes en la galeria */
 
 document.getElementById('prevBtn').addEventListener('click', () => changeImage(-1));
 document.getElementById('nextBtn').addEventListener('click', () => changeImage(1));
