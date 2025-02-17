@@ -33,8 +33,8 @@ body {
     /* left: 50px;              */
     left: 3%;
     border: 2px solid #c82f2f;
-    box-shadow: inset 0 0 0 0 #ffff;
-    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 #ffff; 
+    transition: ease-out 0.5s;     /* Agrega una transición al cambiarse el box-shadow, ease-out hace que empiece rapido y termine lento */
     cursor: pointer;
 }
 
@@ -96,15 +96,15 @@ body {
 
 .yamaha, .Ducati {
     position: relative;
-    width: 100vw;  
-    height: 95vh; 
+    width: 100vw;  /* Ancho visible de la pantalla */
+    height: 95vh;  
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .R1img, .V4img {
-    position: relative;
+    position: relative; /* Se mueve ddsde su posición original sin afectar otro elementos */
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -210,7 +210,7 @@ body {
 }
 
 .gallery img.active {
-    display: block;
+    display: block; /* Ocupa todo el ancho disponible y salta a una nueva línea. Gracias a esta regla solo se vera la imagen con active */
 }
 
 button {
@@ -222,7 +222,7 @@ button {
     padding: 10px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Asegura que los botones esten bien posicionados */
 }
 
 #prevBtn {
